@@ -168,7 +168,7 @@ a:link{
     justify-content: space-between;
     padding:80px;
     background-color: #082C49;
-    width: 1512px;;
+    width: auto;;
     height:auto;
     display: flex;
     color:white;
@@ -273,7 +273,7 @@ a:link{
 }
 #last-footer{
     background-color: #082C49;
-    width:1512px;
+    width:auto;
     height: 80px;
     color: #ffffff;
     height:80px;
