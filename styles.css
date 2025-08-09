@@ -4,40 +4,67 @@
     font-family: 'Montserrat', sans-serif;
     
 }
+html {
+    scroll-behavior: smooth; 
+    scroll-padding-top: 80px; 
+}
 body{
     padding-top: 6px;
     background-color: #EDF7FF;
+    width:100%;
 }
 
 header{
     background-color:#EDF7FF ;
-    width:auto;
+    width:100%; 
     color:#082C49;
     height:80px;
     padding-right: 80px;
     padding-left: 80px;
     display:flex;
     justify-content:space-between;
-    align-items: center;
+    align-items: center; 
     top:0;
     z-index: 1000;
+    position:fixed;
+    box-sizing: border-box; 
+    background-color: rgba(237, 247, 255, 0.7); 
+    backdrop-filter: blur(8px);
+    box-sizing: border-box;
+    /* z-index: 1000; */
+    }
     
-}
 main{
     width:auto;
     height:auto;
 }
 #logo{
     gap:4px;
+    
 }
 #Nav-buttons{
     display:flex;
     flex-direction: row;
     gap: 32px;
+
+
+}
+ #Nav-buttons a {
+     display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease-in-out;
+} 
+#Nav-buttons a:hover {
+    
+    transform: scale(1.15) rotate(2deg);
+     transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), color 0.2s ease-in-out;
+
 }
 a:link{
-    color: #082C49;
+    color: #ffffff;
     text-decoration: none;
+}
+#Nav-buttons a:visited {
+    color: #082C49;  
 }
 
 #intro {
@@ -47,7 +74,10 @@ a:link{
     color: #082C49;
     gap :80px;
     height:auto;
-    width:1512px;
+    /* width:1512px; */
+    display:flex;
+    justify-content:space-between;
+    align-items: center; 
 }
 #intro-box{
     padding-top: 80px;
@@ -66,8 +96,10 @@ a:link{
     text-align:right;
     width:770px;
     height:240px;
+     opacity: 0;
     
 }
+
 #intro-text{
     font-weight: 600;
     size:24px;
@@ -90,11 +122,14 @@ a:link{
 
 #About-Me-box{
     background-color: #EDF7FF;
+    display:flex;
+    justify-content:space-between;
+    align-items: center; 
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 160px;
     padding-bottom: 160px;
-    width:1512px;
+    /* width:1512px; */
     height:auto;
     justify-content: space-between;
     display: flex;
@@ -168,7 +203,7 @@ a:link{
     justify-content: space-between;
     padding:80px;
     background-color: #082C49;
-    width:auto;
+    width: auto;
     height:auto;
     display: flex;
     color:white;
@@ -293,4 +328,15 @@ gap:4px;
     flex-direction: row;
     gap:32px;
     align-items: center;
+}
+#content a {
+    color:#EDF7FF;
+     display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease-in-out;
+} 
+#content a:hover {
+    
+    transform: scale(1.15) rotate(2deg);
+     transition: transform 0.25s cubic-bezier(.68,-0.55,.27,1.55), color 0.2s ease-in-out;
+
 }
